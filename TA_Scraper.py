@@ -50,6 +50,7 @@ def scraper(city):
     api_response = requests.get(url).json()
     geo = api_response['results'][0]['url']  #Get the URL from the results/1st element/Url key
     restaurants_url = url0 + geo
+    logging.info("Scraping {} restaurants info".format(city))
     print(restaurants_url)
 
     #Prepare the scrolling requests using a URL such as
@@ -233,17 +234,18 @@ def scraper(city):
                         for reviews_set in ul_tags:
                             rev_texts = reviews_set.find_all(dir="ltr")
                             rev_dates = reviews_set.find_all(class_="date")
-                            resto_dict['Reviews'] = [[tag.find('a').contents[0] for tag in rev_texts], #text is in a <a> tag
+                            #Able to pick up empty displayed review "" (St morris Argentijns, Amsterdam)
+                            resto_dict['Reviews'] = [[tag.find('a').contents[0] if tag.find('a').contents != [] else np.nan for tag in rev_texts], #text is in a <a> tag
                                                   [tag.contents[0] for tag in rev_dates]]
                     else:
                         resto_dict['Reviews'] = np.nan
-                    
+
                     #Append the dataset
                     dataset = pd.concat([dataset, pd.DataFrame([resto_dict])])
-                        
+
                 else: #tag of restaurant is instead "listing rebrand"
                     resto_soup = data_bloc.find_all(class_="listing rebrand")[inc_rest]
-                    
+
                     #Get the url, id and name of restaurants
                     url_name_tag = resto_soup.find_all(class_="property_title")[0] #tag containing the data
                     #Get restaurant URL
@@ -302,19 +304,21 @@ def scraper(city):
                         for reviews_set in ul_tags:
                             rev_texts = reviews_set.find_all(dir="ltr")
                             rev_dates = reviews_set.find_all(class_="date")
-                            resto_dict['Reviews'] = [[tag.find('a').contents[0] for tag in rev_texts], #text is in a <a> tag
+                            #Able to pick up empty displayed review "" (St morris Argentijns, Amsterdam)
+                            resto_dict['Reviews'] = [[tag.find('a').contents[0] if tag.find('a').contents != [] else np.nan for tag in rev_texts], #text
                                                   [tag.contents[0] for tag in rev_dates]]
                     else:
                         resto_dict['Reviews'] = np.nan
-                    
+
                     #Append the dataset
                     dataset = pd.concat([dataset, pd.DataFrame([resto_dict])])
-                    
+
                     inc_rest += 1
-                
+
             #Increment to next page to display the next 30 restaurants
             inc_page += 30
     
+        #End scrolling when no more restaurants when not able to find other restaurant bloc
         except IndexError:
             logging.info("Last restaurant reached")
             break
