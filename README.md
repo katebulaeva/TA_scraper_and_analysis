@@ -5,6 +5,7 @@ This project is composed of 2 features:
 - The Analysis Notebook
 
 **TA SCRAPER**
+
 "TA_Scraper.py" is the command line Python script version take takes as an argument the name of a city using '-c cityname'.
 "1.TA_scraper" is the Jupyter Notebook that contains the scripts for scraping data, scraping the European capitals restaurants info, curate the raw datasets (*raw.csv* files) and aggregate all the curated datasets into one.
 
@@ -23,4 +24,6 @@ The header of the csv file contains for restaurants (in random order):
 Each curated dataset is saved as "*TA_cityname_restaurants_curated.csv*" in the current directory.
 The aggregated dataset is saved as "*TA_restaurants_curated.csv*". It contains the restaurants information for all the cities that have been scraped, curated in order to be able to analyse them and take interesting information out of tehm.
 
-**Analysis**
+**ANALYSIS**
+
+*(soon updated)*
