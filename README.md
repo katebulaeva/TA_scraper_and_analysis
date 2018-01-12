@@ -1,7 +1,7 @@
 **Trip Advisor scraper & Analysis using Jupyter Notebook**
 
 This project is composed of 2 features:
-- The TA scraper, that gets automatically restaurants data for given cities, curate them and aggregate them all together to form a dataset
+- The TA scraper, that gets automatically restaurants data for given cities, curate them and aggregate them all together to form a dataset (Jupyte Notebook & Python files)
 - The Analysis Notebook
 
 **TA SCRAPER**
