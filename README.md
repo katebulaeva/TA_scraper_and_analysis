@@ -26,7 +26,8 @@ The aggregated dataset is saved as "*TA_restaurants_curated.csv*". It contains t
 
 
 
-**ANALISY WITH BOKEH**
+
+**INTERACTIVE VISUALIZATION WITH BOKEH**
 
 
 
