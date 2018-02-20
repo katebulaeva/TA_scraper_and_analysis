@@ -1,3 +1,5 @@
 *.csv
 
 *.html
+Bokeh
+figures
