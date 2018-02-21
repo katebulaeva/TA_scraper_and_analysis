@@ -31,6 +31,7 @@ The aggregated dataset is saved as "*TA_restaurants_curated.csv*". It contains t
 
 
 **INTERACTIVE VISUALIZATION WITH BOKEH**
+
 Interactive visualization have been prodced in order to have insights of the dataset, on a global way.
 
 An aggregated dataset have been produced at the scale of the cities. This allowed to 
