@@ -1,8 +1,13 @@
 **Trip Advisor scraper & Analysis using Jupyter Notebook**
 
 This project is composed of 2 features:
-- The TA scraper, that gets automatically restaurants data for given cities, curate them and aggregate them all together to form a dataset (Jupyte Notebook & Python files)
+- The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files)
 - The Analysis Notebook
+
+s to explore the dataset and create visualizations
+
+The dataset has been uploaded on Kaggle, feel free to create new kernels and share your results: https://www.kaggle.com/damienbeneschi/krakow-ta-restaurans-data-raw
+
 
 **TA SCRAPER**
 
