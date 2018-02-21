@@ -2,7 +2,7 @@
 
 This project is composed of 2 features:
 - The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files)
-- The Analysis Notebook
+ - The Analysis Notebook
 
 s to explore the dataset and create visualizations
 
