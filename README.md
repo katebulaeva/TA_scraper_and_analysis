@@ -1,10 +1,15 @@
-**Trip Advisor scraper & Analysis using Jupyter Notebook**
+**TRIPADVISOR SCRAPING & ANALYSIS**
 
 This project is composed of 2 features:
+<<<<<<< HEAD
 - The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files)
  - The Analysis Notebook
 
 s to explore the dataset and create visualizations
+=======
+- The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files) ;
+- The Analysis Notebooks to explore the dataset and create visualizations and stories, using the Matplotlib, Seaborn and Bokeh libraries.
+>>>>>>> d7f281acdf608e086b4eb8865b2565ea6aa7146d
 
 The dataset has been uploaded on Kaggle, feel free to create new kernels and share your results: https://www.kaggle.com/damienbeneschi/krakow-ta-restaurans-data-raw
 
@@ -33,8 +38,6 @@ The aggregated dataset is saved as "*TA_restaurants_curated.csv*". It contains t
 
 
 **INTERACTIVE VISUALIZATION WITH BOKEH**
-
-
 
 Interactive visualization have been prodced in order to have insights of the dataset, on a global way.
 
