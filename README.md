@@ -1,15 +1,11 @@
 **TRIPADVISOR SCRAPING & ANALYSIS**
 
 This project is composed of 2 features:
-<<<<<<< HEAD
 - The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files)
- - The Analysis Notebook
-
-s to explore the dataset and create visualizations
-=======
+ - The Analysis Notebooks to explore the dataset and create visualizations
 - The TA scraper, that got restaurants data for given cities, curated them and aggregated them all together from separate csv files to form a dataset (Jupyte Notebook & Python files) ;
 - The Analysis Notebooks to explore the dataset and create visualizations and stories, using the Matplotlib, Seaborn and Bokeh libraries.
->>>>>>> d7f281acdf608e086b4eb8865b2565ea6aa7146d
+
 
 The dataset has been uploaded on Kaggle, feel free to create new kernels and share your results: https://www.kaggle.com/damienbeneschi/krakow-ta-restaurans-data-raw
 
@@ -34,6 +30,14 @@ The header of the csv file contains for restaurants (in random order):
 Each curated dataset is saved as "*TA_cityname_restaurants_curated.csv*" in the current directory.
 The aggregated dataset is saved as "*TA_restaurants_curated.csv*". It contains the restaurants information for all the cities that have been scraped, curated in order to be able to analyse them and take interesting information out of them.
 
+
+**ANALYSIS AND VISUALIZATION**
+
+The "2.Analysis.ipynb" notebook contains the analysis carried out in order to answer several questions about the dataset, such as:
+- What is the Price Range repartition per city?
+- What are the best city for people that have a special diet (gluten, etc.) ?
+- What are the common point between the top restaurants ?
+- an many others.
 
 
 
